@@ -1,0 +1,89 @@
+#!/usr/bin/env bash
+
+# create_ios_gitignore.sh
+#
+# This script creates a .gitignore file in the current directory tailored for iOS/macOS projects.
+# It includes common ignores for Xcode, Swift, Objective-C, macOS, and CocoaPods.
+
+# Exit immediately if any command exits with a non-zero status.
+set -e
+
+# Check if .gitignore already exists
+if [ -f .gitignore ]; then
+    echo ".gitignore already exists. Aborting."
+    exit 1
+fi
+
+# Write the .gitignore content
+cat <<EOF > .gitignore
+# ========== macOS & iOS project .gitignore template ==========
+
+# Build artifacts
+build/
+DerivedData/
+*.xcuserdatad
+*.xccheckout
+*.moved-aside
+*.xcuserstate
+*.xcscmblueprint
+
+# Xcode project files
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcodeproj/xcshareddata/xcschemes
+*.xcworkspace/*
+!*.xcworkspace/xcshareddata/
+!*.xcworkspace/xcshareddata/xcschemes
+
+# Swift Package Manager
+.build/
+*.swiftpm
+Packages/
+Package.pins
+Package.resolved
+*.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/
+*.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Repositories
+*.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Manifests
+
+# CocoaPods
+Pods/
+Podfile.lock
+# Carthage
+Carthage/Build/
+Carthage/Checkouts/
+
+# Flutter/Dart specific (if using Flutter)
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+
+# Xcode gitignore
+*.xccovreport
+*.xccovarchive
+*.xcuserstate
+*.xcscmblueprint
+
+# macOS Finder Files
+.DS_Store
+.Trashes
+*.swp
+*.lock
+._*
+
+# Other metadata
+*.mode1v3
+*.mode2v3
+*.moved-aside
+
+# SwiftUI previews
+*.preview/
+
+# Swift Playgrounds
+timeline.xctimeline
+
+EOF
+
+echo ".gitignore created successfully!"
+
