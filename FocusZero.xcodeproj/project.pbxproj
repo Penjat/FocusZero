@@ -1,0 +1,547 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A0FFCC92D14E2D6003595F9 /* FocusZeroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0FFCC82D14E2D6003595F9 /* FocusZeroApp.swift */; };
+		1A0FFCCB2D14E2D6003595F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0FFCCA2D14E2D6003595F9 /* ContentView.swift */; };
+		1A0FFCCD2D14E2DC003595F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A0FFCCC2D14E2DC003595F9 /* Assets.xcassets */; };
+		1A0FFCD02D14E2DC003595F9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A0FFCCF2D14E2DC003595F9 /* Preview Assets.xcassets */; };
+		1A0FFD0C2D14EAE2003595F9 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0FFCDC2D14E308003595F9 /* WidgetKit.framework */; };
+		1A0FFD0D2D14EAE2003595F9 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0FFCDE2D14E309003595F9 /* SwiftUI.framework */; };
+		1A0FFD102D14EAE2003595F9 /* FocusZeroWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0FFD0F2D14EAE2003595F9 /* FocusZeroWidgetBundle.swift */; };
+		1A0FFD122D14EAE2003595F9 /* FocusZeroWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0FFD112D14EAE2003595F9 /* FocusZeroWidgetLiveActivity.swift */; };
+		1A0FFD142D14EAE2003595F9 /* FocusZeroWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0FFD132D14EAE2003595F9 /* FocusZeroWidget.swift */; };
+		1A0FFD162D14EAE2003595F9 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0FFD152D14EAE2003595F9 /* AppIntent.swift */; };
+		1A0FFD182D14EAE4003595F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A0FFD172D14EAE4003595F9 /* Assets.xcassets */; };
+		1A0FFD1C2D14EAE4003595F9 /* FocusZeroWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 1A0FFD0B2D14EAE2003595F9 /* FocusZeroWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1A0FFD1A2D14EAE4003595F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A0FFCBD2D14E2D6003595F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A0FFD0A2D14EAE2003595F9;
+			remoteInfo = FocusZeroWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1A0FFCF02D14E316003595F9 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1A0FFD1C2D14EAE4003595F9 /* FocusZeroWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1A0FFCC52D14E2D6003595F9 /* FocusZero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FocusZero.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A0FFCC82D14E2D6003595F9 /* FocusZeroApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusZeroApp.swift; sourceTree = "<group>"; };
+		1A0FFCCA2D14E2D6003595F9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1A0FFCCC2D14E2DC003595F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1A0FFCCF2D14E2DC003595F9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1A0FFCDC2D14E308003595F9 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		1A0FFCDE2D14E309003595F9 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		1A0FFD0B2D14EAE2003595F9 /* FocusZeroWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FocusZeroWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A0FFD0F2D14EAE2003595F9 /* FocusZeroWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusZeroWidgetBundle.swift; sourceTree = "<group>"; };
+		1A0FFD112D14EAE2003595F9 /* FocusZeroWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusZeroWidgetLiveActivity.swift; sourceTree = "<group>"; };
+		1A0FFD132D14EAE2003595F9 /* FocusZeroWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusZeroWidget.swift; sourceTree = "<group>"; };
+		1A0FFD152D14EAE2003595F9 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		1A0FFD172D14EAE4003595F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1A0FFD192D14EAE4003595F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A0FFD202D1578B0003595F9 /* FocusZero.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FocusZero.entitlements; sourceTree = "<group>"; };
+		1A0FFD212D157F3F003595F9 /* FocusZeroWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FocusZeroWidgetExtension.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A0FFCC22D14E2D6003595F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A0FFD082D14EAE2003595F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A0FFD0D2D14EAE2003595F9 /* SwiftUI.framework in Frameworks */,
+				1A0FFD0C2D14EAE2003595F9 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A0FFCBC2D14E2D6003595F9 = {
+			isa = PBXGroup;
+			children = (
+				1A0FFD212D157F3F003595F9 /* FocusZeroWidgetExtension.entitlements */,
+				1A0FFCC72D14E2D6003595F9 /* FocusZero */,
+				1A0FFD0E2D14EAE2003595F9 /* FocusZeroWidget */,
+				1A0FFCDB2D14E308003595F9 /* Frameworks */,
+				1A0FFCC62D14E2D6003595F9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1A0FFCC62D14E2D6003595F9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A0FFCC52D14E2D6003595F9 /* FocusZero.app */,
+				1A0FFD0B2D14EAE2003595F9 /* FocusZeroWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A0FFCC72D14E2D6003595F9 /* FocusZero */ = {
+			isa = PBXGroup;
+			children = (
+				1A0FFD202D1578B0003595F9 /* FocusZero.entitlements */,
+				1A0FFCC82D14E2D6003595F9 /* FocusZeroApp.swift */,
+				1A0FFCCA2D14E2D6003595F9 /* ContentView.swift */,
+				1A0FFCCC2D14E2DC003595F9 /* Assets.xcassets */,
+				1A0FFCCE2D14E2DC003595F9 /* Preview Content */,
+			);
+			path = FocusZero;
+			sourceTree = "<group>";
+		};
+		1A0FFCCE2D14E2DC003595F9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1A0FFCCF2D14E2DC003595F9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1A0FFCDB2D14E308003595F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A0FFCDC2D14E308003595F9 /* WidgetKit.framework */,
+				1A0FFCDE2D14E309003595F9 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1A0FFD0E2D14EAE2003595F9 /* FocusZeroWidget */ = {
+			isa = PBXGroup;
+			children = (
+				1A0FFD0F2D14EAE2003595F9 /* FocusZeroWidgetBundle.swift */,
+				1A0FFD112D14EAE2003595F9 /* FocusZeroWidgetLiveActivity.swift */,
+				1A0FFD132D14EAE2003595F9 /* FocusZeroWidget.swift */,
+				1A0FFD152D14EAE2003595F9 /* AppIntent.swift */,
+				1A0FFD172D14EAE4003595F9 /* Assets.xcassets */,
+				1A0FFD192D14EAE4003595F9 /* Info.plist */,
+			);
+			path = FocusZeroWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A0FFCC42D14E2D6003595F9 /* FocusZero */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A0FFCD32D14E2DC003595F9 /* Build configuration list for PBXNativeTarget "FocusZero" */;
+			buildPhases = (
+				1A0FFCC12D14E2D6003595F9 /* Sources */,
+				1A0FFCC22D14E2D6003595F9 /* Frameworks */,
+				1A0FFCC32D14E2D6003595F9 /* Resources */,
+				1A0FFCF02D14E316003595F9 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A0FFD1B2D14EAE4003595F9 /* PBXTargetDependency */,
+			);
+			name = FocusZero;
+			productName = FocusZero;
+			productReference = 1A0FFCC52D14E2D6003595F9 /* FocusZero.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1A0FFD0A2D14EAE2003595F9 /* FocusZeroWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A0FFD1D2D14EAE4003595F9 /* Build configuration list for PBXNativeTarget "FocusZeroWidgetExtension" */;
+			buildPhases = (
+				1A0FFD072D14EAE2003595F9 /* Sources */,
+				1A0FFD082D14EAE2003595F9 /* Frameworks */,
+				1A0FFD092D14EAE2003595F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FocusZeroWidgetExtension;
+			productName = FocusZeroWidgetExtension;
+			productReference = 1A0FFD0B2D14EAE2003595F9 /* FocusZeroWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A0FFCBD2D14E2D6003595F9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					1A0FFCC42D14E2D6003595F9 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					1A0FFD0A2D14EAE2003595F9 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 1A0FFCC02D14E2D6003595F9 /* Build configuration list for PBXProject "FocusZero" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1A0FFCBC2D14E2D6003595F9;
+			productRefGroup = 1A0FFCC62D14E2D6003595F9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A0FFCC42D14E2D6003595F9 /* FocusZero */,
+				1A0FFD0A2D14EAE2003595F9 /* FocusZeroWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A0FFCC32D14E2D6003595F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A0FFCD02D14E2DC003595F9 /* Preview Assets.xcassets in Resources */,
+				1A0FFCCD2D14E2DC003595F9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A0FFD092D14EAE2003595F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A0FFD182D14EAE4003595F9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A0FFCC12D14E2D6003595F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A0FFCCB2D14E2D6003595F9 /* ContentView.swift in Sources */,
+				1A0FFCC92D14E2D6003595F9 /* FocusZeroApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A0FFD072D14EAE2003595F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A0FFD102D14EAE2003595F9 /* FocusZeroWidgetBundle.swift in Sources */,
+				1A0FFD162D14EAE2003595F9 /* AppIntent.swift in Sources */,
+				1A0FFD122D14EAE2003595F9 /* FocusZeroWidgetLiveActivity.swift in Sources */,
+				1A0FFD142D14EAE2003595F9 /* FocusZeroWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1A0FFD1B2D14EAE4003595F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A0FFD0A2D14EAE2003595F9 /* FocusZeroWidgetExtension */;
+			targetProxy = 1A0FFD1A2D14EAE4003595F9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1A0FFCD12D14E2DC003595F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1A0FFCD22D14E2DC003595F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1A0FFCD42D14E2DC003595F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FocusZero/FocusZero.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FocusZero/Preview Content\"";
+				DEVELOPMENT_TEAM = 8PD973N6JY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.superart.FocusZero;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1A0FFCD52D14E2DC003595F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FocusZero/FocusZero.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FocusZero/Preview Content\"";
+				DEVELOPMENT_TEAM = 8PD973N6JY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.superart.FocusZero;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1A0FFD1E2D14EAE4003595F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = FocusZeroWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8PD973N6JY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FocusZeroWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FocusZeroWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.superart.FocusZero.FocusZeroWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1A0FFD1F2D14EAE4003595F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = FocusZeroWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8PD973N6JY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FocusZeroWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FocusZeroWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.superart.FocusZero.FocusZeroWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A0FFCC02D14E2D6003595F9 /* Build configuration list for PBXProject "FocusZero" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A0FFCD12D14E2DC003595F9 /* Debug */,
+				1A0FFCD22D14E2DC003595F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A0FFCD32D14E2DC003595F9 /* Build configuration list for PBXNativeTarget "FocusZero" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A0FFCD42D14E2DC003595F9 /* Debug */,
+				1A0FFCD52D14E2DC003595F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A0FFD1D2D14EAE4003595F9 /* Build configuration list for PBXNativeTarget "FocusZeroWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A0FFD1E2D14EAE4003595F9 /* Debug */,
+				1A0FFD1F2D14EAE4003595F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1A0FFCBD2D14E2D6003595F9 /* Project object */;
+}
