@@ -1,38 +1,25 @@
 import SwiftUI
-import WidgetKit
 
-
-struct ContentView: View {
-    @State var focusText: String
+struct HomeView: View {
+    @EnvironmentObject var dataInteractor: SharedDataInteractor
     var body: some View {
         VStack {
             Spacer()
-            TextField("Your text here", text: $focusText)
+            TextField("Your text here", text: $dataInteractor.focusText)
                 .textFieldStyle(.roundedBorder)
                 .multilineTextAlignment(.center)
                 .font(.title)
                 .padding()
-                .modifier(ClearButton(text: $focusText))
+                .modifier(ClearButton(text: $dataInteractor.focusText))
 
-            Spacer()
-            Button {
-                if let sharedDefaults = UserDefaults(suiteName: "group.com.superart.FocusZero") {
-                    sharedDefaults.set(focusText, forKey: "currentFocus")
-                    // The widget can now read this value
-                    WidgetCenter.shared.reloadAllTimelines()
-                }
-            } label: {
-                Text("update")
-            }
             Spacer()
         }
         .padding()
-        
     }
 }
 
 #Preview {
-    ContentView(focusText: "butt")
+    HomeView()
 }
 
 

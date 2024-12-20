@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1A0FFCC92D14E2D6003595F9 /* FocusZeroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0FFCC82D14E2D6003595F9 /* FocusZeroApp.swift */; };
-		1A0FFCCB2D14E2D6003595F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0FFCCA2D14E2D6003595F9 /* ContentView.swift */; };
+		1A0FFCCB2D14E2D6003595F9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0FFCCA2D14E2D6003595F9 /* HomeView.swift */; };
 		1A0FFCCD2D14E2DC003595F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A0FFCCC2D14E2DC003595F9 /* Assets.xcassets */; };
 		1A0FFCD02D14E2DC003595F9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A0FFCCF2D14E2DC003595F9 /* Preview Assets.xcassets */; };
 		1A0FFD0C2D14EAE2003595F9 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0FFCDC2D14E308003595F9 /* WidgetKit.framework */; };
@@ -19,6 +19,7 @@
 		1A0FFD162D14EAE2003595F9 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0FFD152D14EAE2003595F9 /* AppIntent.swift */; };
 		1A0FFD182D14EAE4003595F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A0FFD172D14EAE4003595F9 /* Assets.xcassets */; };
 		1A0FFD1C2D14EAE4003595F9 /* FocusZeroWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 1A0FFD0B2D14EAE2003595F9 /* FocusZeroWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1A0FFD252D15CEAE003595F9 /* SharedDataInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0FFD242D15CEAE003595F9 /* SharedDataInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +49,7 @@
 /* Begin PBXFileReference section */
 		1A0FFCC52D14E2D6003595F9 /* FocusZero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FocusZero.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A0FFCC82D14E2D6003595F9 /* FocusZeroApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusZeroApp.swift; sourceTree = "<group>"; };
-		1A0FFCCA2D14E2D6003595F9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1A0FFCCA2D14E2D6003595F9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		1A0FFCCC2D14E2DC003595F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A0FFCCF2D14E2DC003595F9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1A0FFCDC2D14E308003595F9 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
@@ -62,6 +63,7 @@
 		1A0FFD192D14EAE4003595F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A0FFD202D1578B0003595F9 /* FocusZero.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FocusZero.entitlements; sourceTree = "<group>"; };
 		1A0FFD212D157F3F003595F9 /* FocusZeroWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FocusZeroWidgetExtension.entitlements; sourceTree = "<group>"; };
+		1A0FFD242D15CEAE003595F9 /* SharedDataInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedDataInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +111,9 @@
 			children = (
 				1A0FFD202D1578B0003595F9 /* FocusZero.entitlements */,
 				1A0FFCC82D14E2D6003595F9 /* FocusZeroApp.swift */,
-				1A0FFCCA2D14E2D6003595F9 /* ContentView.swift */,
+				1A0FFD232D15CBE5003595F9 /* Interactor */,
+				1A0FFD222D15CBDE003595F9 /* UI */,
+				1A0FFCCA2D14E2D6003595F9 /* HomeView.swift */,
 				1A0FFCCC2D14E2DC003595F9 /* Assets.xcassets */,
 				1A0FFCCE2D14E2DC003595F9 /* Preview Content */,
 			);
@@ -144,6 +148,21 @@
 				1A0FFD192D14EAE4003595F9 /* Info.plist */,
 			);
 			path = FocusZeroWidget;
+			sourceTree = "<group>";
+		};
+		1A0FFD222D15CBDE003595F9 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		1A0FFD232D15CBE5003595F9 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				1A0FFD242D15CEAE003595F9 /* SharedDataInteractor.swift */,
+			);
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,7 +266,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A0FFCCB2D14E2D6003595F9 /* ContentView.swift in Sources */,
+				1A0FFD252D15CEAE003595F9 /* SharedDataInteractor.swift in Sources */,
+				1A0FFCCB2D14E2D6003595F9 /* HomeView.swift in Sources */,
 				1A0FFCC92D14E2D6003595F9 /* FocusZeroApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
